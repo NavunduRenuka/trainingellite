@@ -1,0 +1,1 @@
+fuction inpalindrome(str) 
