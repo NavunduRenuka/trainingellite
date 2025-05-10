@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeContent() {
+            const userInput = document.getElementById("userInput").value;
+            const element = document.getElementById("myElement");
+            element.innerHTML = userInput; 
+        }
+    </script>
+</head>
+<body>
+    <p id="message">get ready</p>
+    <script>
+        function changeContent() {
+            const element = document.getElementById("myElement");
+            element.innerHTML = "Content changed!";
+        }
+        setTimeout(function(){ document.getElementById("message").textContent=changeContent="time up";},4000);
+    </script>
+     <div id="myElement">Original Content</div>
+     <button onclick="changecontent">training</button>
+</body>
+</html>
